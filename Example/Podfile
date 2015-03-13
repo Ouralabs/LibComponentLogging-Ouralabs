@@ -1,0 +1,8 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+
+target 'LibComponentLogging-Ouralabs', :exclusive => true do
+  pod "LibComponentLogging-Ouralabs", :path => "../"
+
+  
+end
