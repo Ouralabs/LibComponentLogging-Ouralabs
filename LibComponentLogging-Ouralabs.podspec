@@ -10,29 +10,19 @@
 Pod::Spec.new do |s|
   s.name             = "LibComponentLogging-Ouralabs"
   s.version          = "0.1.0"
-  s.summary          = "A short description of LibComponentLogging-Ouralabs."
-  s.description      = <<-DESC
-                       An optional longer description of LibComponentLogging-Ouralabs
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/LibComponentLogging-Ouralabs"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.summary          = "The official Ouralabs backend for LibComponentLogging"
+  s.homepage         = "https://www.ouralabs.com"
   s.license          = 'MIT'
-  s.author           = { "Ryan Fung" => "ryanh.fung@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/LibComponentLogging-Ouralabs.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Ouralabs" => "support@ouralabs.com" }
+  s.source           = { :git => "https://github.com/Ouralabs/LibComponentLogging-Ouralabs.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/ouralabs'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'LibComponentLogging-Ouralabs' => ['Pod/Assets/*.png']
-  }
+  s.source_files = '*.{h,m,lcl_configure}'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Ouralabs', '>= 2.0.0'
+  s.dependency 'LibComponentLogging-Core'
+  s.dependency 'LibComponentLogging-pods'
 end
