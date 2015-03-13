@@ -9,7 +9,6 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/ouralabs'
   s.platform         = :ios, '7.0'
   s.requires_arc     = true
-  s.source_files     = 'LCLOuralabs.{h,m}'
-  
+  s.source_files     = '*.{h,m,lcl_configure}'
   s.dependency 'Ouralabs', '>= 2.0.0'
 end
