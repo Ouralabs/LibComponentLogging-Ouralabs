@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "LibComponentLogging-Ouralabs"
-  s.version          = "0.1.0"
+  s.version          = "1.0.0"
   s.summary          = "The official Ouralabs backend for LibComponentLogging"
   s.homepage         = "https://www.ouralabs.com"
   s.license          = 'MIT'
